@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <section class="booksSection">
+            <h1>Awesome Books</h1>
+            <div class="books"></div>
+        </section>
+        <section>
+            <h1>Add a new book</h1>
+            <form action="submit" name="form" method="POST">
+                <input type="text" name="title" class="title" placeholder="Title" required>
+                <br>
+                <br>
+                <input type="text" name="author" class="author" placeholder="Author" required>
+                <br>
+                <br>
+                <button type="button" class="addButton">Add</button>
+            </form>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
