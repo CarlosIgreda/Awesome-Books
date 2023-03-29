@@ -115,7 +115,7 @@ Clone this repository to your desired folder:
 **Adeyemi Olusola**
 
 - GitHub: [@Emarkees](https://github.com/emarkees)
--LinkedIn: [@Emarkees](https://www.linkedin.com/in/adeyemi-olusola-1a3ab1141/)
+- LinkedIn: [@Emarkees](https://www.linkedin.com/in/adeyemi-olusola-1a3ab1141)
 
 Contributions, issues, and feature requests are welcome!
 
