@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
               break;
             }
           }
-          
+          localStorage.setItem('bookList', JSON.stringify(arrayObjects));
         });
       }
 
