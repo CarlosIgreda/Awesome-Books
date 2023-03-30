@@ -45,8 +45,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   $addButton.addEventListener('click', () => {
-    add($title.value, $author.value);
-    $title.value = null;
-    $author.value = null;
+    if ($title.value !== '' && $author.value !== '') {
+      add($title.value.trim(), $author.value.trim());
+      $title.value = '';
+      $author.value = '';
+    }
   });
 });
