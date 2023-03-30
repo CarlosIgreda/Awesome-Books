@@ -1,77 +1,52 @@
-/* eslint-disable no-plusplus */
 const $books = document.querySelector('.books');
 const $title = document.querySelector('.title');
 const $author = document.querySelector('.author');
 const $addButton = document.querySelector('.addButton');
+const bookList = JSON.parse(localStorage.getItem('bookList')) || [];
 
 document.addEventListener('DOMContentLoaded', () => {
-  class Books {
-    constructor() {
-      this.bookList = JSON.parse(localStorage.getItem('bookList')) || [];
-      this.arr = [];
-      this.bookList.forEach((book) => {
-        $books.insertAdjacentHTML(
-          'beforeend',
-          `
-            <span><p>${book.title}<br>${book.author}</p><button type="button" id="${book.title}${book.author}">Remove</button><hr></span>
-          `,
-        );
-        this.arr.push(`${book.title}${book.author}`);
-        const $removeButton = document.getElementById(`${book.title}${book.author}`);
-        $removeButton.addEventListener('click', () => {
-          $removeButton.parentElement.remove();
-          const arrayObjects = JSON.parse(localStorage.getItem('bookList'));
-          for (let i = 0; i < arrayObjects.length; i++) {
-            if (
-              `${arrayObjects[i].title}${arrayObjects[i].author}`
-              === $removeButton.getAttribute('id')
-            ) {
-              arrayObjects.splice(i, 1);
-              break;
-            }
-          }
-          localStorage.setItem('bookList', JSON.stringify(arrayObjects));
-        });
-      });
-    }
+  function remove(idSelected) {
+    document.getElementById(idSelected).parentElement.remove();
+    bookList.splice(bookList.findIndex((book) => book.title + book.author === idSelected), 1);
+    localStorage.setItem('bookList', JSON.stringify(bookList));
+  }
 
-    add(title, author) {
-      const book = { title, author };
-      this.bookList.push(book);
+  function add(title, author) {
+    const item = { title, author };
+    item.title = title;
+    item.author = author;
+    bookList.push(item);
+    $books.insertAdjacentHTML(
+      'beforeend',
+      `
+        <span><p>${item.title}<br>${item.author}</p><button type="button" id="${item.title}${item.author}">Remove</button><hr></span>
+      `,
+    );
+    localStorage.setItem('bookList', JSON.stringify(bookList));
+    const $removeButton = document.getElementById(`${item.title}${item.author}`);
+    $removeButton.addEventListener('click', () => {
+      remove(`${item.title}${item.author}`);
+    });
+  }
+
+  if (bookList.length > 0) {
+    bookList.forEach((book) => {
       $books.insertAdjacentHTML(
         'beforeend',
         `
-            <span><p>${title}<br>${author}</p><button type="button" id="${title}${author}">Remove</button><hr></span>
+          <span><p>${book.title}<br>${book.author}</p><button type="button" id="${book.title}${book.author}">Remove</button><hr></span>
         `,
       );
-      this.arr.push(`${title}${author}`);
-      if (this.arr.length >= 1) {
-        const $removeButton = document.getElementById(`${title}${author}`);
-        $removeButton.addEventListener('click', () => {
-          $removeButton.parentElement.remove();
-          const arrayObjects = JSON.parse(localStorage.getItem('bookList'));
-          for (let i = 0; i < arrayObjects.length; i++) {
-            if (
-              `${arrayObjects[i].title}${arrayObjects[i].author}`
-              === $removeButton.getAttribute('id')
-            ) {
-              arrayObjects.splice(i, 1);
-              break;
-            }
-          }
-          localStorage.setItem('bookList', JSON.stringify(arrayObjects));
-        });
-      }
-
-      localStorage.setItem('bookList', JSON.stringify(this.bookList));
-      $title.value = null;
-      $author.value = null;
-    }
+      const $removeButton = document.getElementById(`${book.title}${book.author}`);
+      $removeButton.addEventListener('click', () => {
+        remove(`${book.title}${book.author}`);
+      });
+    });
   }
 
-  const bookObj = new Books();
-
   $addButton.addEventListener('click', () => {
-    bookObj.add($title.value, $author.value);
+    add($title.value, $author.value);
+    $title.value = null;
+    $author.value = null;
   });
 });
