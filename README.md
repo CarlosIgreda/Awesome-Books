@@ -10,7 +10,7 @@
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
-- [👥 Author](#author)
+- [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -89,11 +89,19 @@ Clone this repository to your desired folder:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Author <a name="author"></a>
+## 👥 Authors <a name="authors"></a>
 **Carlos Igreda**
 - GitHub: [@CarlosIgreda](https://github.com/CarlosIgreda)
 - Twitter: [@carlosigreda](https://twitter.com/carlosigreda)
 - LinkedIn: [carlos-jesús-igreda-rivas-323763116](https://www.linkedin.com/in/carlos-jes%C3%BAs-igreda-rivas-323763116/)
+
+**Damian Dib Bustros**
+- GitHub: [@DamianDib9](https://github.com/DamianDib9)
+- LinkedIn: [@DamianDib9](https://ar.linkedin.com/in/damian-dib-bustros-953577261?original_referer=https%3A%2F%2Fwww.google.com%2F)
+
+**Adeyemi Olusola**
+- GitHub: [@Emarkees](https://github.com/emarkees)
+- LinkedIn: [@Emarkees](https://www.linkedin.com/in/adeyemi-olusola-1a3ab1141)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,17 +113,7 @@ Clone this repository to your desired folder:
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-## 👤 Collaborators:
-
-**Damian Dib Bustros**
-
-- GitHub: [@DamianDib9](https://github.com/DamianDib9)
-- LinkedIn: [@DamianDib9](https://ar.linkedin.com/in/damian-dib-bustros-953577261?original_referer=https%3A%2F%2Fwww.google.com%2F)
-
-**Adeyemi Olusola**
-
-- GitHub: [@Emarkees](https://github.com/emarkees)
-- LinkedIn: [@Emarkees](https://www.linkedin.com/in/adeyemi-olusola-1a3ab1141)
+## 👤 Collaboration:
 
 Contributions, issues, and feature requests are welcome!
 
