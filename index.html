@@ -12,10 +12,11 @@
 <body>
     <main>
         <section class="booksSection">
-            <h1>Awesome Books</h1>
+            <h1>All awesome books</h1>
             <div class="books"></div>
         </section>
-        <section>
+        <hr class="divide">
+        <section class="newBooks">
             <h1>Add a new book</h1>
             <form action="submit" name="form" method="POST">
                 <input type="text" name="title" class="title" placeholder="Title" required>
@@ -25,6 +26,7 @@
                 <br>
                 <br>
                 <button type="button" class="addButton">Add</button>
+                <div class="error">Please, complete all fields.</div>
             </form>
         </section>
     </main>
