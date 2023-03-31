@@ -24,7 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-
+    remove(idSelected) {
+      document.getElementById(idSelected).parentElement.remove();
+      this.bookList.splice(this.bookList.findIndex((e) => e.title + e.author === idSelected), 1);
+      localStorage.setItem('bookList', JSON.stringify(this.bookList));
+    }
 
     add(title, author) {
       const item = { title, author };
