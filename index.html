@@ -12,19 +12,17 @@
 <body>
     <main>
         <section class="booksSection">
-            <h1>Awesome Books</h1>
+            <h1 class="titles">All awesome books</h1>
             <div class="books"></div>
         </section>
-        <section>
-            <h1>Add a new book</h1>
+        <hr class="divide">
+        <section class="newBooks">
+            <h1 class="titles">Add a new book</h1>
             <form action="submit" name="form" method="POST">
-                <input type="text" name="title" class="title" placeholder="Title" required>
-                <br>
-                <br>
-                <input type="text" name="author" class="author" placeholder="Author" required>
-                <br>
-                <br>
+                <input type="text" name="title" class="title inputs" placeholder="Title" required>
+                <input type="text" name="author" class="author inputs" placeholder="Author" required>
                 <button type="button" class="addButton">Add</button>
+                <div class="error">Please, complete all fields.</div>
             </form>
         </section>
     </main>

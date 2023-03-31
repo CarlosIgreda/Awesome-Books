@@ -1,3 +1,133 @@
-body {
+* {
+  font-family: 'Comic Neue', cursive;
+  font-size: 1rem;
+  font-weight: 900;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titles {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.itemContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  height: 2.1rem;
+}
+
+.itemContainer:nth-child(2n) {
+  background-color: rgb(255, 255, 255);
+  height: 2.1rem;
+  padding: 1.1rem 0.5rem;
+  gap: 5rem;
+}
+
+.itemContainer:nth-child(2n+1) {
+  background-color: #ddd;
+  height: 2.1rem;
+  padding: 1.1rem 0.5rem;
+  gap: 5rem;
+}
+
+.books {
+  outline: 3px solid black;
+}
+
+.remove {
+  background-color: white;
+  text-decoration: none;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+  font-weight: 900;
+  font-size: 0.7rem;
+  height: 2rem;
+}
+
+.inputs {
+  font-size: 0.8rem;
+}
+
+p {
+  font-size: 0.7rem;
+}
+
+.addButton {
+  background-color: white;
+  text-decoration: none;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+  font-weight: 900;
+  font-size: 0.7rem;
+  max-width: 100%;
+  align-self: flex-end;
+}
+
+.divide {
   display: block;
+  margin: 2rem auto 0 auto;
+  width: 5rem;
+  border: 0.1rem solid #000;
+}
+
+.error {
+  display: none;
+  font-size: 1rem;
+  color: red;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+
+.newBooks {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
+
+  .itemContainer {
+    gap: 15rem;
+  }
+
+  .itemContainer:nth-child(2n) {
+    gap: 15rem;
+  }
+
+  .itemContainer:nth-child(2n+1) {
+    gap: 15rem;
+  }
+
+  .remove {
+    font-size: 1rem;
+  }
+
+  .inputs {
+    font-size: 1rem;
+  }
+
+  .titles {
+    font-size: 1.55rem;
+  }
+
+  .addButton {
+    font-size: 1rem;
+  }
 }
