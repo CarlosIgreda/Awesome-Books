@@ -17,7 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
           `,
           );
           const $removeButton = document.getElementById(`${book.title}${book.author}`);
-          
+          $removeButton.addEventListener('click', () => {
+            this.remove(`${book.title}${book.author}`);
+          });
         });
       }
     }
