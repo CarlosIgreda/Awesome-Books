@@ -125,5 +125,9 @@ document.addEventListener('DOMContentLoaded', () => {
     $newSection.style.display = 'none';
   });
 
-
+$listPage.addEventListener('click', () => {
+    $booksSection.style.display = 'block';
+    $contactSection.style.display = 'none';
+    $newSection.style.display = 'none';
+  });
 });
