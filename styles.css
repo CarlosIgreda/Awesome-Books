@@ -1,22 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
 * {
-  font-family: 'Comic Neue', cursive;
-  font-size: 1rem;
+  font-family: 'Comic Neue', sans-serif;
   font-weight: 900;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-main {
+body {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+}
+
+.navcontainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 0.5rem;
+  border: 2.5px solid #000;
   align-items: center;
+  margin: 0.3rem 0.5rem;
+}
+
+.ulnav {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  align-self: center;
+}
+
+.linav {
+  align-self: center;
+  display: flex;
+  align-items: center;
+}
+
+.h3nav {
+  font-size: 0.7rem;
+}
+
+.anav {
+  text-decoration: none;
+  color: #000;
+  padding-right: 0.4rem;
+  border-right: 2.5px solid #000;
+  font-size: 0.7rem;
+  transition: color 0.5s ease;
+}
+
+.acontact {
+  padding-right: 0;
+  border-right: 0;
+}
+
+.datecontainer {
+  margin: 0.2rem 0.5rem 0 0.5rem;
+}
+
+.datepage {
+  font-size: 0.6rem;
+  text-align: right;
+}
+
+.books {
+  display: block;
+  margin: 0 0.5rem;
 }
 
 .titles {
   font-size: 1.2rem;
   text-align: center;
+  margin: 1.5rem auto 1.5rem auto;
 }
 
-.itemContainer {
+.listcontainer {
+  border: 2.5px solid #000;
+}
+
+.content {
+  font-size: 0.7rem;
+}
+
+.itemcontainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,58 +92,41 @@ main {
   height: 2.1rem;
 }
 
-.itemContainer:nth-child(2n) {
+.itemcontainer:nth-child(2n) {
   background-color: rgb(255, 255, 255);
   height: 2.1rem;
-  padding: 1.1rem 0.5rem;
+  padding: 0.1rem 0.5rem;
   gap: 5rem;
 }
 
-.itemContainer:nth-child(2n+1) {
+.itemcontainer:nth-child(2n+1) {
   background-color: #ddd;
   height: 2.1rem;
-  padding: 1.1rem 0.5rem;
+  padding: 0.1rem 0.5rem;
   gap: 5rem;
-}
-
-.books {
-  outline: 3px solid black;
-}
-
-.remove {
-  background-color: white;
-  text-decoration: none;
-  border-bottom: 5px solid black;
-  border-right: 5px solid black;
-  font-weight: 900;
-  font-size: 0.7rem;
-  height: 2rem;
 }
 
 .inputs {
-  font-size: 0.8rem;
-}
-
-p {
   font-size: 0.7rem;
+  padding: 0.1rem;
+  border: 2.5px solid #000;
 }
 
-.addButton {
+.shadow {
   background-color: white;
   text-decoration: none;
-  border-bottom: 5px solid black;
-  border-right: 5px solid black;
-  font-weight: 900;
+  border-bottom: 4.5px solid black;
+  border-right: 4.5px solid black;
   font-size: 0.7rem;
-  max-width: 100%;
+  padding: 0 0.5rem;
+}
+
+.addbutton {
   align-self: flex-end;
 }
 
-.divide {
-  display: block;
-  margin: 2rem auto 0 auto;
-  width: 5rem;
-  border: 0.1rem solid #000;
+.remove {
+  height: 1.5rem;
 }
 
 .error {
@@ -86,48 +137,143 @@ p {
   text-align: center;
 }
 
-.newBooks {
-  display: flex;
+.newbooks {
+  display: none;
   flex-direction: column;
+  padding: 0 4.5rem;
 }
 
-form {
+.contactinfo {
+  display: none;
+}
+
+.contacttext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pcontact {
+  font-size: 0.7rem;
+}
+
+.ulcontact {
+  display: block;
+  justify-content: center;
+  font-size: 0.7rem;
+  margin: 2rem 12%;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 95.2%;
+  border: 2.5px solid #000;
+  box-sizing: border-box;
+  margin: 0.3rem 0.5rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.copyright {
+  font-size: 0.7rem;
+}
+
+.points {
+  padding-left: 1rem;
+}
+
+.formadd {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
 }
 
+.anav:hover {
+  color: blue;
+}
+
+/* ::::::::::::::::::::::::DESKTOP::::::::::::::::::::::::: */
+
 @media (min-width: 768px) {
-  p {
+  .navcontainer {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 1rem;
+  }
+
+  .h3nav {
     font-size: 1rem;
   }
 
-  .itemContainer {
-    gap: 15rem;
+  .ulnav {
+    gap: 1.5rem;
   }
 
-  .itemContainer:nth-child(2n) {
-    gap: 15rem;
-  }
-
-  .itemContainer:nth-child(2n+1) {
-    gap: 15rem;
-  }
-
-  .remove {
+  .anav {
     font-size: 1rem;
+    padding-right: 2rem;
+  }
+
+  .acontact {
+    padding-right: 0;
+  }
+
+  .datecontainer {
+    margin: 0 1rem;
+  }
+
+  .datepage {
+    font-size: 0.9rem;
+  }
+
+  .titles {
+    font-size: 2rem;
+    margin: 3rem auto 3rem auto;
+  }
+
+  .books {
+    margin: 2rem 1rem;
+  }
+
+  .content {
+    font-size: 1rem;
+  }
+
+  .shadow {
+    font-size: 1rem;
+    padding: 0 0.8rem;
+  }
+
+  .footer {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 1rem;
+    width: 97.5%;
+  }
+
+  .copyright {
+    font-size: 1rem;
+  }
+
+  .points {
+    padding-left: 1.5rem;
   }
 
   .inputs {
     font-size: 1rem;
+    padding: 0.5rem;
   }
 
-  .titles {
-    font-size: 1.55rem;
+  .newbooks {
+    padding: 0 31rem;
   }
 
-  .addButton {
+  .pcontact {
     font-size: 1rem;
+  }
+
+  .ulcontact {
+    font-size: 1rem;
+    margin: 2rem 37%;
   }
 }
