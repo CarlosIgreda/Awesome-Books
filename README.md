@@ -20,7 +20,7 @@
 
 # 📖 Awesome books <a name="about-project"></a>
 
-In this project, we will build a basic website using medium-fidelity wireframes to create a UI, that allows users to add/remove books from a list. We achieved that by using JavaScript objects and arrays. We needed to dynamically modify the DOM and added basic events. We will be using them in all Microverse projects and most likely in my future job as well, so it is important to know them!
+In this project, We will take the Awesome books application and convert it into a fully functional website. We will refactor the project to add three new sections on top of the two sections you have already completed: Books list (done), Add book form (done), a new Contact info section, a Navigation bar, and a Footer. We will be using them in all Microverse projects and most likely in my future job as well, so it is important to know them!
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -58,6 +58,7 @@ In this project, we will build a basic website using medium-fidelity wireframes 
 - **Use objects to store and access data**
 - **Use localStorage**
 - **Create class methods to add and remove books**
+- **Use a navigation bar**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,7 +110,7 @@ Clone this repository to your desired folder:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **High-fidelity wireframe**
+- [ ] **Use libraries and frameworks**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
