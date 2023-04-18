@@ -64,7 +64,7 @@ In this project, We will take the Awesome books application and convert it into 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://carlosigreda.github.io)
+- [Live Demo Link](https://carlosigreda.github.io/Awesome-Books)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
