@@ -96,7 +96,7 @@ Clone this repository to your desired folder:
 **Carlos Igreda**
 - GitHub: [@CarlosIgreda](https://github.com/CarlosIgreda)
 - Twitter: [@carlosigreda](https://twitter.com/carlosigreda)
-- LinkedIn: [carlosigreda](https://www.linkedin.com/in/carlosigreda)
+- LinkedIn: [@carlosigreda](https://www.linkedin.com/in/carlosigreda)
 
 **Damian Dib Bustros**
 - GitHub: [@DamianDib9](https://github.com/DamianDib9)
